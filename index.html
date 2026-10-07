@@ -169,7 +169,7 @@ h2{text-decoration:underline wavy var(--pop);text-decoration-thickness:3px;text-
 
 <section id="twin">
   <p class="big rv">Not related by blood.<br>Still somehow related by chaos.</p>
-  <div class="polaroid rv"><img data-img="full" alt=""><p>u, one very smug penguin, and too much cake ♡</p></div>
+  <div class="polaroid rv"><img data-img="full" alt=""><p>u, one very smug penguin, and too much cake . ݁⋆ ۶🍮ৎ ݁˖ . ݁</p></div>
   <div class="glass rv">
     <p>Some people arrive in ur life and quietly rearrange what "family" means. No shared last name, no shared house, no childhood photos of the two of us. Just a thousand small moments of being chosen, again and again, on ordinary days. That's the whole miracle, u didn't have to be my person, u just were, and u kept being. That's the kind of family I'd pick every single time.</p>
   </div>
@@ -196,9 +196,9 @@ h2{text-decoration:underline wavy var(--pop);text-decoration-thickness:3px;text-
 
 <section id="final">
   <h2 class="rv">so here's to another year of u.</h2>
-  <p class="msg tw" data-t="Thank you for existing, in your soft, unhurried way.
+  <p class="msg tw" data-t="Thank you for existing, in ur soft, unhurried way.
 Thank you for being kind when it would've been easier not to.
-And thank you for letting me call you my twin.
+And thank you for letting me call u my twin.
 
 I love you. Happy birthday. ♡" data-confetti="1"></p>
   <div class="penguins"><span class="pg"></span><span class="pg"></span><span class="pg"></span></div>
@@ -294,7 +294,7 @@ mb.onclick=()=>{if(!aud.paused){aud.pause();mb.textContent='♪ Super Trouper';r
 // games
 document.querySelectorAll('.gtabs .btn').forEach(b=>b.onclick=()=>{document.querySelectorAll('.gtabs .btn,.gp').forEach(x=>x.classList.remove('on'));b.classList.add('on');$('#'+b.dataset.g).classList.add('on')});
 let sT,fI,left,score=0;const fa=$('#fa');
-function endCatch(){clearInterval(sT);clearInterval(fI);fa.innerHTML='';$('#fmsg').textContent=score>=15?'Legend keychain ikan, proud of u 🍀':score>=8?'Lumayan! Penyelam handal, eaa ✨':'Ikannya licin, pasti susah ya? its okay, u can always try againn';if(score>=15)confetti()}
+function endCatch(){clearInterval(sT);clearInterval(fI);fa.innerHTML='';$('#fmsg').textContent=score>=15?'Pemancing Handal, proud of u 🍀':score>=8?'Lumayan! Penyelam handal, eaa ✨':'Ikannya licin, pasti susah ya? its okay, u can always try againn';if(score>=15)confetti()}
 $('#fgo').onclick=()=>{clearInterval(sT);clearInterval(fI);fa.innerHTML='';score=0;left=20;$('#fs').textContent=0;$('#ft').textContent=20;$('#fmsg').textContent='';
  fI=setInterval(()=>{const f=document.createElement('div'),pg=Math.random()<.15;f.className='cf';f.innerHTML=pg?ICON[4]:ICON[1];f.style.top=rnd(2,80)+'%';f.style.animationDuration=rnd(3,5)+'s';
   f.onclick=()=>{score+=pg?3:1;$('#fs').textContent=score;f.remove()};fa.appendChild(f);setTimeout(()=>f.remove(),5200)},600);
@@ -302,7 +302,7 @@ $('#fgo').onclick=()=>{clearInterval(sT);clearInterval(fI);fa.innerHTML='';score
 let first=null,lock=false,pairs=0,moves=0;
 function memInit(){const d=[...ICON,...ICON].sort(()=>Math.random()-.5);$('#mg').innerHTML=d.map(s=>`<button class="mc" data-k="${ICON.indexOf(s)}"><span class="mf">?</span><span class="mb">${s}</span></button>`).join('');pairs=moves=0;first=null;lock=false;$('#mm').textContent=''}
 $('#mg').onclick=e=>{const c=e.target.closest('.mc');if(!c||lock||c.classList.contains('up'))return;c.classList.add('up');if(!first){first=c;return}moves++;
- if(first.dataset.k===c.dataset.k){first=null;if(++pairs===6){$('#mm').textContent=`Semua cocok dalam ${moves} langkah! congratss ♡`;confetti()}}
+ if(first.dataset.k===c.dataset.k){first=null;if(++pairs===6){$('#mm').textContent=`Semua cocok dalam ${moves} langkah! congratss°.ᐟ`;confetti()}}
  else{lock=true;const a=first;first=null;setTimeout(()=>{a.classList.remove('up');c.classList.remove('up');lock=false},800)}};
 $('#mr').onclick=memInit;memInit();
 </script>
